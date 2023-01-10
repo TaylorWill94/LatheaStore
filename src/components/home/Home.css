@@ -1,0 +1,26 @@
+/* home page styling */
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-title {
+  font-size: 46px;
+}
+
+.home-sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.website-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.exclusives-title {
+  font-size: 85px;
+}
