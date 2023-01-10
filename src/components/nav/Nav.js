@@ -7,7 +7,9 @@ export const Nav = () => {
       <Link to="/">
         <h3 className="nav-item">Home</h3>
       </Link>
-      <h3 className="nav-item">Shop</h3>
+      <Link to="/shop">
+        <h3 className="nav-item">Shop</h3>
+      </Link>
       <h3 className="nav-item">About</h3>
     </nav>
   );

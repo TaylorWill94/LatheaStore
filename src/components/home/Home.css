@@ -6,12 +6,13 @@
 }
 
 .store-title {
-  font-size: 46px;
+  font-size: 2.875rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
 }
 
 .home-sec {
   display: flex;
-  justify-content: space-between;
 }
 
 .website-info {
@@ -22,5 +23,5 @@
 }
 
 .exclusives-title {
-  font-size: 85px;
+  font-size: 5.3125rem;
 }

@@ -9,16 +9,13 @@ export const Home = () => {
       <div className="home-sec">
         <section className="website-info">
           <div>
-            {" "}
             <p>sweet to the soul</p>
           </div>
           <div>
-            {" "}
             <h2 className="exclusives-title">Exclusive</h2>
           </div>
           <div>
-            {" "}
-            <h3>ShOP NOW --></h3>
+            <h3>SHOP NOW</h3>
           </div>
         </section>
       </div>
