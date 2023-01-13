@@ -47,6 +47,7 @@
   flex-direction: column;
   margin-top: 10%;
   animation: fadeIn 5s;
+  text-align: center;
 }
 
 @media (min-width: 390px) {
@@ -101,6 +102,19 @@
   }
 }
 
+/* IMAGE STYLING */
+
+img {
+  width: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .img-section {
   animation: fadeInImage 5s;
   transform: translateY(0px);
@@ -122,7 +136,6 @@
 @media (min-width: 390px) {
   /* desktop style */
   .img-section {
-    padding: 100px;
     animation: fadeInImage 5s;
     transform: translateY(0px);
     animation: lazyanimation 1s linear forwards;

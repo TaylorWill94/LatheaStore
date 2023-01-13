@@ -22,7 +22,7 @@ export const Home = () => {
           </section>
         </div>
         <section className="img-section">
-          <img src={testPhoto} alt="fashion" width={500} />
+          <img src={testPhoto} alt="fashion" width={500} class="center" />
         </section>
       </div>
     </div>
