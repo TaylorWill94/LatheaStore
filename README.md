@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Lathea Knight Store
 
 Ecommerce site for Lathea Knight Store
