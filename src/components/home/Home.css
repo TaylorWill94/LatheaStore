@@ -1,5 +1,7 @@
 /* home page styling */
 
+/* EXCLUSIVE PAGE SECTION */
+
 .home-wrapper {
   /* mobile style */
   display: grid;
@@ -11,7 +13,6 @@
   .home-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: red;
   }
 }
 
@@ -21,13 +22,25 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     text-align: center;
+    margin-bottom: 100px;
   }
 }
+
+/* TITLE OF STORE STYLING */
 
 .store-title {
   font-size: 22px;
   letter-spacing: 0.1rem;
   text-align: center;
+}
+
+@media (min-width: 390px) {
+  .store-title {
+    font-size: 22px;
+    margin-top: 50px;
+    letter-spacing: 6.4px;
+    text-align: center;
+  }
 }
 
 /* tablet style */
@@ -42,19 +55,14 @@
 .info-sec {
 }
 
+/* EXCLUSIVE STYLING FOR HOMEPAGE */
+
 .website-info {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
   animation: fadeIn 5s;
   text-align: center;
-}
-
-@media (min-width: 390px) {
-  /* desktop style */
-  .website-info {
-    background-color: red;
-  }
 }
 
 @media (min-width: 640px) {
@@ -103,6 +111,8 @@
 }
 
 /* IMAGE STYLING */
+
+/* CENTERS IMAGE */
 
 .center {
   display: block;
