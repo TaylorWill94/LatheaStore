@@ -1,26 +1,60 @@
 /* home page styling */
 
 .home-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.store-title {
-  font-size: 2.875rem;
-  letter-spacing: 0.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
   text-align: center;
 }
 
-.home-sec {
-  display: flex;
+@media (min-width: 1250px) {
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.store-title {
+  font-size: 22px;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .store-title {
+    font-size: 2.875rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+  }
+}
+
+.info-sec {
 }
 
 .website-info {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
-  margin-left: 20%;
   animation: fadeIn 5s;
+}
+
+@media (min-width: 640px) {
+  .website-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    /* margin-left: 20%; */
+    animation: fadeIn 5s;
+  }
+}
+
+@media (min-width: 1250px) {
+  .website-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 20%;
+    animation: fadeIn 5s;
+  }
 }
 
 @keyframes fadeIn {
