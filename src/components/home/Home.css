@@ -1,15 +1,26 @@
 /* home page styling */
 
 .home-wrapper {
+  /* mobile style */
   display: grid;
   grid-template-columns: 1fr;
-  text-align: center;
+}
+
+@media (min-width: 390px) {
+  /* desktop style */
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: red;
+  }
 }
 
 @media (min-width: 1250px) {
+  /* desktop style */
   .home-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    text-align: center;
   }
 }
 
@@ -19,10 +30,11 @@
   text-align: center;
 }
 
+/* tablet style */
 @media (min-width: 640px) {
   .store-title {
-    font-size: 2.875rem;
-    letter-spacing: 0.4rem;
+    font-size: 46px;
+    letter-spacing: 6.4px;
     text-align: center;
   }
 }
@@ -37,12 +49,18 @@
   animation: fadeIn 5s;
 }
 
+@media (min-width: 390px) {
+  /* desktop style */
+  .website-info {
+    background-color: red;
+  }
+}
+
 @media (min-width: 640px) {
   .website-info {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
-    /* margin-left: 20%; */
     animation: fadeIn 5s;
   }
 }
@@ -52,7 +70,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 10%;
-    margin-left: 20%;
     animation: fadeIn 5s;
   }
 }
@@ -67,5 +84,59 @@
 }
 
 .exclusives-title {
-  font-size: 5.3125rem;
+  font-size: 16px;
+}
+
+@media (min-width: 390px) {
+  /* desktop style */
+  .exclusives-title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1250px) {
+  /* desktop style */
+  .exclusives-title {
+    font-size: 85px;
+  }
+}
+
+.img-section {
+  animation: fadeInImage 5s;
+  transform: translateY(0px);
+  animation: lazyanimation 1s linear forwards;
+}
+
+@keyframes lazyanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: opacity 0.15s linear;
+    vertical-align: bottom;
+    transform: translate(-20px);
+  }
+}
+
+@media (min-width: 390px) {
+  /* desktop style */
+  .img-section {
+    padding: 100px;
+    animation: fadeInImage 5s;
+    transform: translateY(0px);
+    animation: lazyanimation 1s linear forwards;
+  }
+
+  @keyframes lazyanimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transition: opacity 0.15s linear;
+      vertical-align: bottom;
+      transform: translate(-20px);
+    }
+  }
 }
