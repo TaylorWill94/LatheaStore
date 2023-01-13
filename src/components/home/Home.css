@@ -104,15 +104,23 @@
 
 /* IMAGE STYLING */
 
-img {
-  width: 50%;
-}
-
 .center {
   display: block;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+@media (min-width: 1250px) {
+  /* desktop style */
+  .center {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
 
 .img-section {
